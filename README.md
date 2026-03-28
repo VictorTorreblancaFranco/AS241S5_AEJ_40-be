@@ -25,7 +25,7 @@ Este proyecto consume dos APIs de IA para generar respuestas a prompts y almacen
 
 ## Herramientas y versiones utilizadas
 
-- **Java 26**
+- **Java 19**
 - **Spring Boot 3.5.13**
 - **Spring WebFlux**
 - **MongoDB Atlas** (NoSQL)
