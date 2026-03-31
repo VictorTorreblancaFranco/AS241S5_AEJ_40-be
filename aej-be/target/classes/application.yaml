@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: aej-be
+  data:
+    mongodb:
+      uri: mongodb+srv://victortorreblancafranco_db_user:0tyygRJ8YqeUeAZA@cluster0.zibxbuf.mongodb.net/?appName=Cluster0
+      database: aej_ai_database
+
+server:
+  port: 8080
+
+api:
+  rapidapi:
+    key: 15ef6af35bmsh53b2da95c0fac75p188cfejsnc26ed442fe77
+    text-to-image:
+      url: https://ai-text-to-image-generator-flux-free-api.p.rapidapi.com/aaaaaaaaaaaaaaaaaiimagegenerator/quick.php
+      host: ai-text-to-image-generator-flux-free-api.p.rapidapi.com
+    instagram-transcript:
+      url: https://instagram-video-transcript.p.rapidapi.com/transcribe-ig-video
+      host: instagram-video-transcript.p.rapidapi.com
+
+logging:
+  level:
+    com.as241s5: DEBUG
+    org.springframework.web.reactive.function.client: DEBUG

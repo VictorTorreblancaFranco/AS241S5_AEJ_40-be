@@ -1,0 +1,12 @@
+/Users/victortorreblanca/Downloads/aej-be/src/main/java/AS241S5_AEJ_40_be/AejBeApplication.java
+/Users/victortorreblanca/Downloads/aej-be/src/main/java/AS241S5_AEJ_40_be/config/WebClientConfig.java
+/Users/victortorreblanca/Downloads/aej-be/src/main/java/AS241S5_AEJ_40_be/controller/AIController.java
+/Users/victortorreblanca/Downloads/aej-be/src/main/java/AS241S5_AEJ_40_be/dto/ApiResponse.java
+/Users/victortorreblanca/Downloads/aej-be/src/main/java/AS241S5_AEJ_40_be/model/ApiCallLog.java
+/Users/victortorreblanca/Downloads/aej-be/src/main/java/AS241S5_AEJ_40_be/model/InstagramTranscriptRequest.java
+/Users/victortorreblanca/Downloads/aej-be/src/main/java/AS241S5_AEJ_40_be/model/InstagramTranscriptResponse.java
+/Users/victortorreblanca/Downloads/aej-be/src/main/java/AS241S5_AEJ_40_be/model/TextToImageRequest.java
+/Users/victortorreblanca/Downloads/aej-be/src/main/java/AS241S5_AEJ_40_be/model/TextToImageResponse.java
+/Users/victortorreblanca/Downloads/aej-be/src/main/java/AS241S5_AEJ_40_be/repository/ApiCallLogRepository.java
+/Users/victortorreblanca/Downloads/aej-be/src/main/java/AS241S5_AEJ_40_be/service/InstagramTranscriptService.java
+/Users/victortorreblanca/Downloads/aej-be/src/main/java/AS241S5_AEJ_40_be/service/TextToImageService.java
