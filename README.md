@@ -1,53 +1,65 @@
 # AS241S5_AEJ_40-be
 
-
 ## Proyecto: Integración de APIs de Inteligencia Artificial con Spring WebFlux y MongoDB
 
-Este proyecto consume dos APIs de IA para generar respuestas a prompts y almacena los resultados en una base de datos NoSQL (MongoDB Atlas) usando Spring WebFlux.
+Este proyecto implementa el consumo de dos APIs de Inteligencia Artificial a través de RapidAPI, utilizando Spring WebFlux para manejo reactivo y almacenamiento de datos en MongoDB Atlas (NoSQL).
+
+Se realizan solicitudes a las APIs, se procesan las respuestas y se almacenan los resultados en la base de datos en la nube.
 
 ---
 
-## APIs de IA utilizadas
+## 1. APIs de Inteligencia Artificial
 
-1. **HuggingFace API**
-   - Características: Permite generar respuestas basadas en modelos de lenguaje pre-entrenados (ej. GPT-2).
-   - URL base: `https://api-inference.huggingface.co`
-   - Método utilizado: POST
-   - Tipo de respuesta: JSON con el texto generado.
+### RapidAPI - Text to Image Generator
+- Genera imágenes a partir de texto (prompt).
+- Permite crear contenido visual automáticamente usando IA.
+- Método: POST
+- Respuesta: datos o URL de la imagen generada.
 
-2. **Cohere API**
-   - Características: Generación de texto con modelos avanzados, permite configurar prompt y tokens.
-   - URL base: `https://api.cohere.ai/v1/generate`
-   - Método utilizado: POST
-   - Tipo de respuesta: JSON con el texto generado.
-
----
-
-## Herramientas y versiones utilizadas
-
-- **Java 19**
-- **Spring Boot 3.5.13**
-- **Spring WebFlux**
-- **MongoDB Atlas** (NoSQL)
-- **Maven**
-- **WebClient de Spring** para consumir APIs externas.
+### RapidAPI - Instagram Video Transcript
+- Transcribe el contenido de videos de Instagram.
+- Convierte audio a texto automáticamente.
+- Método: POST
+- Respuesta: texto transcrito en formato JSON.
 
 ---
 
-## Configuración
+## 2. Tecnologías Utilizadas
 
-Todas las credenciales están en `src/main/resources/application.yml`:
+- Java (JDK 17 / 19)
+- Spring Boot
+- Spring WebFlux
+- MongoDB Atlas (NoSQL)
+- Maven
+- WebClient (para consumo de APIs)
 
-spring:
-  application:
-    name: aej
+---
 
-  data:
-    mongodb:
-      uri: mongodb+srv://victortorreblancafranco_db_user:0tyygRJ8YqeUeAZA@clusteraej.i9r23v7.mongodb.net/aej
+## 3. Base de Datos
 
-huggingface:
-  api-key: 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
+- MongoDB Atlas (Base de datos en la nube)
+- Modelo orientado a documentos (JSON)
+- Integración reactiva con Spring Data MongoDB
 
-cohere:
-  api-key: erILH5HXL8C95jETpPPoGRlfnwbyM0L43tUpKzQc
+---
+
+## 4. Dependencias
+
+### Spring WebFlux + MongoDB
+
+```xml
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-webflux</artifactId>
+</dependency>
+
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-data-mongodb-reactive</artifactId>
+</dependency>
+
+<dependency>
+    <groupId>io.projectreactor</groupId>
+    <artifactId>reactor-test</artifactId>
+    <scope>test</scope>
+</dependency>
