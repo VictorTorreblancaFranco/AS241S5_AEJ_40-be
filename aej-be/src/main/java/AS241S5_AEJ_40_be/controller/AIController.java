@@ -107,3 +107,4 @@ public class AIController {
                 ));
     }
 }
+// Agregar @CrossOrigin antes de @RestController

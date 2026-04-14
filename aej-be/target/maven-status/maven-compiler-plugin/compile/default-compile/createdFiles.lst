@@ -10,4 +10,5 @@ AS241S5_AEJ_40_be/model/TextToImageRequest.class
 AS241S5_AEJ_40_be/service/TextToImageService.class
 AS241S5_AEJ_40_be/repository/ApiCallLogRepository.class
 AS241S5_AEJ_40_be/AejBeApplication.class
+AS241S5_AEJ_40_be/config/CorsConfig.class
 AS241S5_AEJ_40_be/service/InstagramTranscriptService.class

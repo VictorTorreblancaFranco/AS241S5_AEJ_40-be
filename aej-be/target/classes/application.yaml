@@ -11,7 +11,7 @@ server:
 
 api:
   rapidapi:
-    key: 15ef6af35bmsh53b2da95c0fac75p188cfejsnc26ed442fe77
+    key: 363d224115msh0eb8e326723a996p1bd6f6jsn6a2ce69896d0
     text-to-image:
       url: https://ai-text-to-image-generator-flux-free-api.p.rapidapi.com/aaaaaaaaaaaaaaaaaiimagegenerator/quick.php
       host: ai-text-to-image-generator-flux-free-api.p.rapidapi.com
