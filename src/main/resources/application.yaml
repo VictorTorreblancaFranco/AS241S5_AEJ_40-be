@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: aej-be
+  data:
+    mongodb:
+      uri: ${DATABASE_URL}
+      database: aej_ai_database
+
+server:
+  port: 8080
+
+api:
+  rapidapi:
+    key: ${RAPIDAPI_KEY}
+    text-to-image:
+      url: ${RAPIDAPI_TEXTTOIMAGE_URL}
+      host: ${RAPIDAPI_TEXTTOIMAGE_HOST}
+    instagram-transcript:
+      url: ${RAPIDAPI_INSTAGRAM_URL}
+      host: ${RAPIDAPI_INSTAGRAM_HOST}
+
+logging:
+  level:
+    com.as241s5: DEBUG
+    org.springframework.web.reactive.function.client: DEBUG

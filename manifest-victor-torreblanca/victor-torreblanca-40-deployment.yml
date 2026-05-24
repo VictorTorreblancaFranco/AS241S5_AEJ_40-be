@@ -1,0 +1,52 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: victor-torreblanca-40-deployment
+  namespace: victor-torreblanca-40-namespace
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: victor-torreblanca-40-deployment
+  template:
+    metadata:
+      labels:
+        app: victor-torreblanca-40-deployment
+    spec:
+      containers:
+      - name: victor-torreblanca-40-container
+        image: victor2202/aej-be:1.0
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
+        env:
+        - name: DATABASE_URL
+          valueFrom:
+            secretKeyRef:
+              name: victor-torreblanca-40-secret
+              key: DATABASE_URL
+        - name: RAPIDAPI_KEY
+          valueFrom:
+            secretKeyRef:
+              name: victor-torreblanca-40-secret
+              key: RAPIDAPI_KEY
+        - name: RAPIDAPI_TEXTTOIMAGE_URL
+          valueFrom:
+            secretKeyRef:
+              name: victor-torreblanca-40-secret
+              key: RAPIDAPI_TEXTTOIMAGE_URL
+        - name: RAPIDAPI_TEXTTOIMAGE_HOST
+          valueFrom:
+            secretKeyRef:
+              name: victor-torreblanca-40-secret
+              key: RAPIDAPI_TEXTTOIMAGE_HOST
+        - name: RAPIDAPI_INSTAGRAM_URL
+          valueFrom:
+            secretKeyRef:
+              name: victor-torreblanca-40-secret
+              key: RAPIDAPI_INSTAGRAM_URL
+        - name: RAPIDAPI_INSTAGRAM_HOST
+          valueFrom:
+            secretKeyRef:
+              name: victor-torreblanca-40-secret
+              key: RAPIDAPI_INSTAGRAM_HOST
