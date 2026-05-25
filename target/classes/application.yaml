@@ -3,7 +3,7 @@ spring:
     name: aej-be
   data:
     mongodb:
-      uri: mongodb+srv://victortorreblancafranco_db_user:0tyygRJ8YqeUeAZA@cluster0.zibxbuf.mongodb.net/?appName=Cluster0
+      uri: ${DATABASE_URL}
       database: aej_ai_database
 
 server:
@@ -11,13 +11,13 @@ server:
 
 api:
   rapidapi:
-    key: 363d224115msh0eb8e326723a996p1bd6f6jsn6a2ce69896d0
+    key: ${RAPIDAPI_KEY}
     text-to-image:
-      url: https://ai-text-to-image-generator-flux-free-api.p.rapidapi.com/aaaaaaaaaaaaaaaaaiimagegenerator/quick.php
-      host: ai-text-to-image-generator-flux-free-api.p.rapidapi.com
+      url: ${RAPIDAPI_TEXTTOIMAGE_URL}
+      host: ${RAPIDAPI_TEXTTOIMAGE_HOST}
     instagram-transcript:
-      url: https://instagram-video-transcript.p.rapidapi.com/transcribe-ig-video
-      host: instagram-video-transcript.p.rapidapi.com
+      url: ${RAPIDAPI_INSTAGRAM_URL}
+      host: ${RAPIDAPI_INSTAGRAM_HOST}
 
 logging:
   level:
