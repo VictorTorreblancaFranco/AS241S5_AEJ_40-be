@@ -3,6 +3,7 @@ AS241S5_AEJ_40_be/controller/AIController.class
 AS241S5_AEJ_40_be/config/WebClientConfig.class
 AS241S5_AEJ_40_be/model/TextToImageResponse.class
 AS241S5_AEJ_40_be/model/InstagramTranscriptRequest.class
+AS241S5_AEJ_40_be/service/InstagramTranscriptService$1.class
 AS241S5_AEJ_40_be/dto/ApiResponse$ApiResponseBuilder.class
 AS241S5_AEJ_40_be/model/InstagramTranscriptResponse.class
 AS241S5_AEJ_40_be/model/ApiCallLog.class

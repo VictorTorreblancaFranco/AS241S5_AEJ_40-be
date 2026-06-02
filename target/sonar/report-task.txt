@@ -1,0 +1,7 @@
+organization=victortorreblancafranco
+projectKey=victortorreblancafranco_AS241S5_AEJ_40-be
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.88979
+dashboardUrl=https://sonarcloud.io/dashboard?id=victortorreblancafranco_AS241S5_AEJ_40-be
+ceTaskId=AZ6GbTAn6eTnWh90_Frs
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AZ6GbTAn6eTnWh90_Frs

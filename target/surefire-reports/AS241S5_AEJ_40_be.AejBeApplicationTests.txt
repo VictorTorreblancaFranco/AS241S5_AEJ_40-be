@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: AS241S5_AEJ_40_be.AejBeApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.776 s -- in AS241S5_AEJ_40_be.AejBeApplicationTests
