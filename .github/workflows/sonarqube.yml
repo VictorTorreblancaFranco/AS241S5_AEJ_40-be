@@ -26,6 +26,16 @@ jobs:
         with:
           path: ~/.m2
           key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
+          restore-keys: ${{ runner.os }}-m2
+          
+      - name: Set up environment variables
+        run: |
+          echo "RAPIDAPI_KEY=${{ secrets.RAPIDAPI_KEY }}" >> $GITHUB_ENV
+          echo "RAPIDAPI_TEXTTOIMAGE_URL=${{ secrets.RAPIDAPI_TEXTTOIMAGE_URL }}" >> $GITHUB_ENV
+          echo "RAPIDAPI_TEXTTOIMAGE_HOST=${{ secrets.RAPIDAPI_TEXTTOIMAGE_HOST }}" >> $GITHUB_ENV
+          echo "RAPIDAPI_INSTAGRAM_URL=${{ secrets.RAPIDAPI_INSTAGRAM_URL }}" >> $GITHUB_ENV
+          echo "RAPIDAPI_INSTAGRAM_HOST=${{ secrets.RAPIDAPI_INSTAGRAM_HOST }}" >> $GITHUB_ENV
+          echo "DATABASE_URL=${{ secrets.DATABASE_URL }}" >> $GITHUB_ENV
           
       - name: Build and analyze
         env:
@@ -33,5 +43,7 @@ jobs:
         run: |
           mvn clean verify sonar:sonar \
             -Dsonar.host.url=https://sonarcloud.io \
-            -Dsonar.organization=victortorreblanca \
-            -Dsonar.projectKey=victortorreblanca_AS241S5_AEJ_40-be
+            -Dsonar.organization=victortorreblancafranco \
+            -Dsonar.projectKey=victortorreblancafranco_AS241S5_AEJ_40-be \
+            -Dsonar.projectName="AS241S5_AEJ_40-be" \
+            -Dsonar.token=${{ secrets.SONAR_TOKEN }}
